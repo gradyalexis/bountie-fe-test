@@ -50,7 +50,7 @@ const PrivacyNote: React.FunctionComponent<IPrivacyNoteProps> = (props) => {
         </p>
       </Col>
 
-      <div className="space-y-4">
+      <div className="space-y-4 md:space-y-0 md:flex">
         <Col xs={12} md={4}>
           <div className="switch">
             <span id="TooltipExample" className="mr-5">SMS & Mobile Call</span>
