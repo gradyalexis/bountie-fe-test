@@ -2,17 +2,14 @@ import axios from "axios";
 import * as React from "react";
 import { Col, Input, Label } from "reactstrap";
 
-interface IFormAddressProps {}
+interface FormAddressType {}
 
-const FormAddress: React.FunctionComponent<IFormAddressProps> = (props) => {
-  // call the option from api using axios
-  // url : https://restcountries.com/v2/all
+const FormAddress: React.FunctionComponent<FormAddressType> = (props) => {
 
   const [country, setCountry] = React.useState("");
 
   const url = "https://restcountries.com/v2/all";
 
-  // call axios typescript
   const getCountryName = async () => {
     const response: any = await axios.get(url);
     const countryName = response.data.map((item: any) => {

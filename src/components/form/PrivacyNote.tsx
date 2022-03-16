@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Tooltip, Button, Col, Input, Label } from "reactstrap";
 
-interface IPrivacyNoteProps {}
+interface PrivacyNoteType {}
 
-const PrivacyNote: React.FunctionComponent<IPrivacyNoteProps> = (props) => {
+const PrivacyNote: React.FunctionComponent<PrivacyNoteType> = (props) => {
   const [tooltipOpen, setTooltipOpen] = React.useState(false);
 
   const toggle = () => setTooltipOpen(!tooltipOpen);
@@ -54,7 +54,7 @@ const PrivacyNote: React.FunctionComponent<IPrivacyNoteProps> = (props) => {
         <Col xs={12} md={4}>
           <div className="switch">
             <span id="TooltipExample" className="mr-5">SMS & Mobile Call</span>
-            <Tooltip placement="bottom" isOpen={tooltipOpen} target="TooltipExample" toggle={toggle} style={{ backgroundColor: "#FFCB3D", color: 'black' }}>
+            <Tooltip placement="bottom" isOpen={tooltipOpen} target="TooltipExample" toggle={toggle} style={{ backgroundColor: "#FAC228", color: 'black' }}>
               Subscribe to SMS & Mobile Call, Email & Mailing to receive updates about your membership
             </Tooltip>
             <input type="checkbox" id="toggleAll" />
@@ -88,7 +88,7 @@ const PrivacyNote: React.FunctionComponent<IPrivacyNoteProps> = (props) => {
             type="checkbox"
             className="mr-4"
             style={{
-              border: "1px solid #FFCB3D"
+              border: "1px solid #FAC228"
             }}
           />{" "}
           I have read and understood the above terms and conditions and hereby
@@ -98,7 +98,7 @@ const PrivacyNote: React.FunctionComponent<IPrivacyNoteProps> = (props) => {
       <Col xs={12} md={12} className="mt-5">
         <Button color="primary" className="px-4 py-2" style={{
           float: "right",
-          backgroundColor: "#FFCB3D",
+          backgroundColor: "#FAC228",
           color: "#000",
           fontWeight: "bold",
           fontSize: "15px",

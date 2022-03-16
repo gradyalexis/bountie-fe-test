@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Col, Input, Label } from "reactstrap";
 
-interface IFormContactProps {}
+interface FormContactType {}
 
-const FormContact: React.FunctionComponent<IFormContactProps> = (props) => {
+const FormContact: React.FunctionComponent<FormContactType> = (props) => {
   const year = new Date().getFullYear();
 
   const renderDayOptions = () => {

@@ -6,10 +6,9 @@ import {
 } from 'reactstrap';
 import Logo from '../../assets/img/logo.png';
 
-interface IHeaderProps {
-}
+interface HeaderTitleType {}
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const HeaderTitle: React.FunctionComponent<HeaderTitleType> = (props) => {
     return (
       <Container>
         <Navbar className="flex w-full" style={{
@@ -23,4 +22,4 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
     );
   }
 
-export default Header;
+export default HeaderTitle;

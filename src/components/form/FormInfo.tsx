@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Col, Input, Label } from "reactstrap";
 
-interface IFormInfoProps {}
+interface FormInfoType {}
 
-const FormInfo: React.FunctionComponent<IFormInfoProps> = (props) => {
+const FormInfo: React.FunctionComponent<FormInfoType> = (props) => {
   return (
     <>
       <Col xs={12} md={6} className="mb-4">

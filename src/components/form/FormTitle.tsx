@@ -1,11 +1,11 @@
 import * as React from "react";
 import { FormGroup, Input, Label } from "reactstrap";
 
-interface IFormTitleProps {
+interface FormTitleType {
   value?: string;
 }
 
-const FormTitle: React.FunctionComponent<IFormTitleProps> = (props) => {
+const FormTitle: React.FunctionComponent<FormTitleType> = (props) => {
   const data = ["Mrs", "Ms", "Mdm", "Mr", "Dr"];
   const [value, setValue] = React.useState(null);
 
@@ -28,7 +28,7 @@ const FormTitle: React.FunctionComponent<IFormTitleProps> = (props) => {
             type="checkbox"
             onChange={changeValue}
             style={{
-              border: "1px solid #FFCB3D",
+              border: "1px solid #FAC228",
             }}
             value={item}
             checked={value === item}

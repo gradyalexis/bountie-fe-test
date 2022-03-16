@@ -6,9 +6,9 @@ import FormInfo from "./FormInfo";
 import FormTitle from "./FormTitle";
 import PrivacyNote from "./PrivacyNote";
 
-interface IFormProps {}
+interface FormType {}
 
-const Form: React.FunctionComponent<IFormProps> = (props) => {
+const Form: React.FunctionComponent<FormType> = (props) => {
   return (
     <Container style={{ marginTop: "100px" }}>
       <p

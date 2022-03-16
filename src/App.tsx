@@ -1,17 +1,13 @@
 import * as React from 'react';
-import HeaderMsg from './components/header/HeaderMessage';
-import Header from './components/header/Header';
+import Header from './components/header';
 import Form from './components/form/index';
-interface IAppProps {
-}
 
-const App: React.FunctionComponent<IAppProps> = (props) => {
+interface AppType {}
+
+const App: React.FunctionComponent<AppType> = () => {
   return (
-    <div style={{
-      borderTop: '5px solid #FFCB3D',
-    }}>
+    <div style={{ borderTop: '5px solid #FAC228' }}>
         <Header />
-        <HeaderMsg />
         <Form />
     </div>
   )
