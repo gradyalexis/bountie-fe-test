@@ -11,21 +11,10 @@ interface FormType {}
 const Form: React.FunctionComponent<FormType> = (props) => {
   return (
     <Container style={{ marginTop: "100px" }}>
-      <p
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-        }}
-      >
-        Create new account
-      </p>
+      <p className="text-2xl font-semibold">Create new account</p>
       <Container>
         <FormTitle />
-        <Row
-          style={{
-            fontWeight: "bold",
-          }}
-        >
+        <Row className="font-bold">
           <FormInfo />
           <FormAddress />
           <FormContact />

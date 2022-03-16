@@ -11,9 +11,7 @@ interface HeaderTitleType {}
 const HeaderTitle: React.FunctionComponent<HeaderTitleType> = (props) => {
     return (
       <Container>
-        <Navbar className="flex w-full" style={{
-          height: '120px',
-        }}>
+        <Navbar className="flex w-full" style={{ height: '120px' }}>
             <NavbarBrand href="/" className="mx-auto">
             <img src={Logo} className="h-24" alt="logo"/>
             </NavbarBrand>

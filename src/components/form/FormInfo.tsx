@@ -8,28 +8,17 @@ const FormInfo: React.FunctionComponent<FormInfoType> = (props) => {
     <>
       <Col xs={12} md={6} className="mb-4">
         <Label>First Name</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
         <Input type="text" placeholder="First name" />
       </Col>
-
       <Col xs={12} md={6} className="mb-4">
         <Label>Last Name</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
         <Input type="text" placeholder="Last name" />
       </Col>
-
       <Col xs={12} md={6} className="mb-4">
         <Label>Mobile phone number</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
         <Input type="text" placeholder="Mobile phone number" />
       </Col>
       <Col xs={12} md={6}></Col>

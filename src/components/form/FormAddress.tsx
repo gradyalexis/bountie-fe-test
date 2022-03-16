@@ -33,35 +33,20 @@ const FormAddress: React.FunctionComponent<FormAddressType> = (props) => {
 
   return (
     <>
-      <p className="text-xl font-semibold">
-        Address
-      </p>
+      <p className="text-xl font-semibold">Address</p>
       <Col xs={12} md={12} className="mb-4">
         <Label>Address</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
         <Input type="text" placeholder="Address" />
       </Col>
-
       <Col xs={12} md={6} className="mb-4">
         <Label>Country/Location</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
-        <Input type="select" placeholder="Last name">
-          {renderCountryName()}
-        </Input>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
+        <Input type="select" placeholder="Last name">{renderCountryName()}</Input>
       </Col>
-
       <Col xs={12} md={6}>
         <Label>Province/District</Label>
-        <span className="text-xl font-semibold text-red-500">
-          {" "}
-          *
-        </span>
+        <span className="text-xl font-semibold text-red-500">{" "}*</span>
         <Input type="text" placeholder="Province/District" />
       </Col>
     </>
