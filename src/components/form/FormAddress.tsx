@@ -58,6 +58,7 @@ const FormAddress: React.FunctionComponent<IFormAddressProps> = (props) => {
           {renderCountryName()}
         </Input>
       </Col>
+
       <Col xs={12} md={6}>
         <Label>Province/District</Label>
         <span className="text-xl font-semibold text-red-500">
